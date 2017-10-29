@@ -1,3 +1,9 @@
+/*******************
+*   Roxanne Henry  *
+*   DIGF-6037-001  *
+*   Apples Game    *
+********************/
+
 var listOfApples;
 var apple;
 var loadingImg;
@@ -81,7 +87,8 @@ function draw(){
       animation(loadingImg, windowWidth/2, windowHeight/2);
       return;
     }
-  }else{
+  }else{ //if there are no apples, simply print out the empty basket.
+    //Continue to ignore the rest of the draw function if this is true.
     image(emptyBasket, windowWidth/5, windowHeight/18, emptyBasket.width/5, emptyBasket.height/5);
     return;
   }
